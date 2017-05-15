@@ -1,0 +1,132 @@
+.banner_wrap{
+	width: 100%;
+	height: 593px;
+	position: relative;
+}
+/*轮播图的图片*/
+.banner_wrap .banner_wrap_picture{
+	width: 100%;
+	height: 593px;
+	position: absolute;
+	
+}
+/*第一张图片*/
+.banner_wrap .banner_wrap_picture .a{
+	background: url(../img/banner01_bg.jpg) center top;
+	width: 100%;
+	height: 593px;
+		position: absolute;
+}
+.banner_wrap .banner_wrap_picture .a .a1{
+	position: absolute;
+	left: 420px;
+	top: 204px;
+}
+.banner_wrap .banner_wrap_picture .a .a2{
+	position: absolute;
+	left: 420px;
+	top: 304px;
+}
+.banner_wrap .banner_wrap_picture .a .a3{
+	position: absolute;
+	left: 420px;
+	top: 354px;
+}
+/*第二张图片*/
+.banner_wrap .banner_wrap_picture .b{
+	background: url(../img/banner02_bg.jpg) center top;
+	width: 100%;
+	height: 593px;
+		position: absolute;
+}
+.banner_wrap .banner_wrap_picture .b .a1{
+	position: absolute;
+	left: 170px;
+	top: 170px;
+}
+.banner_wrap .banner_wrap_picture .b .a2{
+	position: absolute;
+	left: 299px;
+	top: 28px;
+}
+.banner_wrap .banner_wrap_picture .b .a3{
+	position: absolute;
+	left: 660px;
+	top: 186px;
+}
+/*第3张图片*/
+.banner_wrap .banner_wrap_picture .c{
+	background: url(../img/banner01_bg.jpg) center top;
+	width: 100%;
+	height: 593px;
+		position: absolute;
+}
+.banner_wrap .banner_wrap_picture .c .a1{
+	position: absolute;
+	left: 420px;
+	top: 204px;
+}
+.banner_wrap .banner_wrap_picture .c .a2{
+	position: absolute;
+	left: 420px;
+	top: 304px;
+}
+.banner_wrap .banner_wrap_picture .c .a3{
+	position: absolute;
+	left: 420px;
+	top: 354px;
+}
+/*开始制作    轮播图上面的小图标*/
+.banner_wrap .point{
+	width: 218px;
+	height: 30px;
+	position: absolute;
+	bottom: 40px;
+	left: 50%;
+	margin-left: -109px;
+	background: url(../img/next&prev_line.png) no-repeat left center;
+}
+/*.banner_wrap .point span{
+	display: inline-block;
+}*/
+.banner_wrap .point ._left{
+	
+	left: 0px;
+	width: 28px;
+	height: 28px;
+}
+
+.banner_wrap .point ._right{
+	float: right;
+	width: 28px;
+	height: 28px;
+}
+
+.banner_wrap .point ._center{
+	display: inline-block;
+	width: 46px;
+	height: 16px;
+	border-radius: 8px 8px 8px 8px;
+	border:2px solid #E2E2E2;
+	position: absolute;
+	top: 50%;
+	margin-top: -8px;
+	left: 50%;
+	margin-left: -23px;
+	background-color: #F1F2F6;
+}
+/*小图标里面的小圆点*/
+.banner_wrap .point ._center ul li{
+	width: 6px;
+    height: 6px;
+    float: left;
+    margin-left: 5px;
+    border-radius: 7px;
+    border: 1px solid #E2E2E2;
+    background: #E2E2E2;
+    margin-top: 3px;   
+}
+.banner_wrap .point ._center .blue{
+	background: #006FD6;
+}
+	

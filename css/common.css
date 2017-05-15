@@ -1,0 +1,38 @@
+@charset "utf-8";
+.w{
+     width: 1100px;
+     margin: 0 auto;     //定义版心
+}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dt,dd,div{
+     margin: 0;
+     padding: 0;
+}
+img{
+     border: 0 none;
+}
+a{
+     text-decoration: none;
+     cursor:pointer:  //鼠标放到上面变成小手
+}
+a:hover{
+     color: #E72600;
+}
+li{
+     list-style: none;
+}
+.clear:after{
+     content: "";
+     height: 0;
+     display: block;
+     visibility: hidden;
+     clear: both;
+     line-height: 0;
+}
+.clear{
+     zoom: 1;
+}
+body{
+    font-size:15px;
+    font-family:  STKaiti,KaiTi_GB2312,"华文楷体","宋体"，Arial,"Heivetica";
+    background:#f1f2f6;
+}

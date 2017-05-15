@@ -1,0 +1,78 @@
+/* 开头 */
+.header_wrap{
+	background: url(../img/header_bg.jpg) no-repeat top center;
+	z-index: 5;
+}
+.header_wrap .head{
+	height: 120px;
+}
+.header_wrap .log{
+	float: left;
+}
+.header_wrap .log a{ /*设置log*/
+	background: url(../img/logo.png) no-repeat;
+	display: block;
+	width: 376px;
+	height: 120px;
+	text-indent: -9999px;
+}
+.header_wrap .nav_wrap{/* 浮动*/
+	float: right;
+	z-index: 9999;
+}
+.header_wrap .nav_wrap h1{
+	float: left;
+	margin-top: 45px;
+	color: white;
+	font-size: 15px;
+	padding: 0 15px;
+	position: relative;
+	display: inline; /*使之在一行*/
+}
+.header_wrap .nav_wrap h1 span{
+	background: url(../img/nav_xiajiantou.png) no-repeat ;
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: block;
+	width: 25px;
+	height: 25px;
+}
+.header_wrap .nav_wrap h1:hover span{
+	background: url(../img/nav_xiajiantou_hover.png);
+	
+}
+.header_wrap .nav_wrap h1:hover{
+	background: url(../img/nav_now_bg.png) no-repeat  bottom;/*鼠标放到上面的时候变图标*/
+    padding-bottom: 10px;
+}
+.header_wrap .nav_wrap .shouye{
+	
+	background: url(../img/nav_now_bg.png) no-repeat bottom;/*加一个小圆点*/
+	padding-bottom: 10px;
+}
+.header_wrap .nav_wrap .youbianda{
+	padding: 0 40px 0 15px;
+}
+.header_wrap .nav_wrap ul{
+	width: 180px;
+	background-color: #36264A;
+	position: absolute;
+	top: 40px;
+	left: 0;
+	display: none;
+	z-index: 1000;
+	
+}
+.header_wrap .nav_wrap ul li{
+	color: #ffffed;
+	line-height: 40px;
+	height: 40px;
+	text-indent: 30px;	
+	background: url(../img/nav_li_bg.png) no-repeat 150px center;
+	transition: text-indent 0.5s;
+}
+.header_wrap .nav_wrap ul li:hover{
+	text-indent: 40px;
+	transition: text-indent 0.5s;
+}
