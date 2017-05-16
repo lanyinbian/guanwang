@@ -2,6 +2,7 @@
 	width: 100%;
 	height: 593px;
 	position: relative;
+	padding-bottom: 42px;
 }
 /*轮播图的图片*/
 .banner_wrap .banner_wrap_picture{
@@ -128,5 +129,188 @@
 }
 .banner_wrap .point ._center .blue{
 	background: #006FD6;
+	position: relative;
 }
 	
+/*产品介绍*/
+
+.product_wrap{
+	width: 100%;
+	/*background: bisque;*/
+	height: 1000px;
+	position: relative;
+	
+}
+.product_wrap .a,.b{
+	display: block;
+	margin: 0 auto;
+}
+.product_wrap h1,h2{
+	text-align: center;
+}
+.product_wrap>.a{
+	margin-bottom: 66px;
+}
+.product_wrap>.b{
+	margin-top: 12px;
+	padding-bottom: 70px;
+}
+.product_wrap>h1{
+	font-size: 54px;
+	font-family: "华文楷体";
+	color: #301759;
+}
+.product_wrap>h2{
+	font-size: 18px;
+	font-family: "华文楷体";
+	color: #301759;
+}
+.product_wrap .product_left{
+	width: 22px;
+	height: 388px;
+	/*background: palegreen;*/
+	background: url(../img/chanpin_nowline_bgline.png) repeat-y top center;
+	margin-top: 26px;
+	float: left;
+}
+.product_wrap .product_left ul li{
+	width: 20px;
+	height: 12px;
+	/*background: aqua;*/
+	margin-bottom: 64px;
+	background: url(../img/chanpin_nowline_xiaoquan.png)no-repeat top center;
+	/*display: none;*/
+}
+.product_wrap .product_left ul li.now span{
+	background: url(../img/chanpin_nowline_daquan.png) top center;
+	width: 19px;
+	height: 19px;
+	display: block;
+	
+}
+.product_wrap .product_content{
+	position: relative;
+}
+/*左右的小按钮*/
+.product_wrap .left_right{
+	width: 623px;
+	height: 30px;
+	/*background: blue;*/
+	position: absolute;
+	left: 477px;
+	top: 241px;
+	background: url(../img/next&prev_line.png) repeat-x left center;
+	
+	
+}
+.product_wrap .left_right .zuo{
+	width: 29px;
+    height: 29px;
+    background: url(../img/prev_jiantou.png);
+    float: left;
+}
+.product_wrap .left_right .zuo:hover{
+	background: url(../img/prev_jiantou_hover.png);
+}
+.product_wrap .left_right .you{
+	width: 29px;
+    height: 29px;
+    background: url(../img/next_jiantou.png);
+    float: right;
+}
+.product_wrap .left_right .you:hover{
+	background: url(../img/next_jiantou_hover.png);
+}
+/*右边的内容*/
+.product_wrap .product_right{
+	width: 1038px;
+	height: 443px;
+	/*background: tomato;*/
+	float: right;
+	position: absolute;
+	display: none;
+}
+.product_wrap .product_right.now{
+	display: block;
+}
+.product_wrap .product_right .left_picture{
+	float: left;
+}
+.product_wrap .product_right .left_picture img{
+	height: 443px;
+}
+.product_wrap .product_right .right_content{
+	width: 623px;
+	float: right;
+}
+.product_wrap .product_right .right_content h3.title{
+	font-size: 30px;
+    font-family: "华文楷体";
+    width: 100%;
+    height: 61px;
+    color: #301759;
+    background:url(../img/pen_line.png)no-repeat bottom left;
+    position: relative;
+}
+.product_wrap .product_right .right_content h3 span{
+	width: 61px;
+    height: 54px;
+    display: block;
+    position: absolute;
+    right: 9px;
+    bottom: 0px;
+    background: url(../img/pen.png);
+}
+/*两个div  包含里面的文字*/
+.product_wrap .product_right .right_content .top{
+	height: 180px;
+	width: 100%;
+	/*background: aqua;*/
+}
+.product_wrap .product_right .right_content .top .top_left{
+	float: left;
+	margin-top: 40px;
+	margin-left: 12px;
+}
+.product_wrap .product_right .right_content .top .top_right{
+	float: right;
+    width: 474px;
+    color: #6B6A6E;
+    margin-top: 36px;
+}
+.product_wrap .product_right .right_content .top .top_right h4{
+	font-size: 24px;
+    font-family: "华文楷体";
+}
+.product_wrap .product_right .right_content .top .top_right p{
+	 height: 23px;
+    line-height: 23px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.product_wrap .product_right .right_content .bottom{
+	height: 172px;
+	width: 100%;
+	/*background: aqua;*/
+	margin-top: 30px;
+	position: relative;
+}
+.product_wrap .product_right .right_content .bottom p{
+	height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    font-family:"华文楷体";
+}
+.product_wrap .product_right .right_content .bottom h5{
+	width: 216px;
+    height: 52px;
+    color: #6B696F;
+    font-size: 18px;
+    font-family: "华文楷体";
+    text-align: center;
+    line-height: 52px;
+    background: url(../img/yinhao_zuo.png)no-repeat top left,url(../img/yinhao_you.png)no-repeat right bottom;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
