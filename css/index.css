@@ -82,7 +82,7 @@
 	width: 218px;
 	height: 30px;
 	position: absolute;
-	bottom: 40px;
+	bottom: 84px;
 	left: 50%;
 	margin-left: -109px;
 	background: url(../img/next&prev_line.png) no-repeat left center;
@@ -139,7 +139,6 @@
 	/*background: bisque;*/
 	height: 1000px;
 	position: relative;
-	
 }
 .product_wrap .a,.b{
 	display: block;
@@ -181,7 +180,7 @@
 	background: url(../img/chanpin_nowline_xiaoquan.png)no-repeat top center;
 	/*display: none;*/
 }
-.product_wrap .product_left ul li.now span{
+.product_wrap .product_left ul li.now{
 	background: url(../img/chanpin_nowline_daquan.png) top center;
 	width: 19px;
 	height: 19px;
@@ -200,6 +199,7 @@
 	left: 477px;
 	top: 241px;
 	background: url(../img/next&prev_line.png) repeat-x left center;
+	z-index: 1000;
 	
 	
 }
@@ -222,11 +222,18 @@
 	background: url(../img/next_jiantou_hover.png);
 }
 /*右边的内容*/
-.product_wrap .product_right{
+.product_wrap  .product_right_wrap{
 	width: 1038px;
 	height: 443px;
 	/*background: tomato;*/
 	float: right;
+	position: absolute;
+	
+}
+.product_wrap .product_right_wrap{
+	position: relative;
+}
+.product_wrap .product_right{
 	position: absolute;
 	display: none;
 }
@@ -251,6 +258,8 @@
     color: #301759;
     background:url(../img/pen_line.png)no-repeat bottom left;
     position: relative;
+    margin-left: 50px;
+  
 }
 .product_wrap .product_right .right_content h3 span{
 	width: 61px;
@@ -266,6 +275,7 @@
 	height: 180px;
 	width: 100%;
 	/*background: aqua;*/
+	margin-left: 50px;
 }
 .product_wrap .product_right .right_content .top .top_left{
 	float: left;
@@ -287,6 +297,7 @@
     line-height: 23px;
     font-size: 14px;
     margin-top: 10px;
+    font-family:"华文楷体";
 }
 .product_wrap .product_right .right_content .bottom{
 	height: 172px;
@@ -294,6 +305,7 @@
 	/*background: aqua;*/
 	margin-top: 30px;
 	position: relative;
+	margin-left: 50px;
 }
 .product_wrap .product_right .right_content .bottom p{
 	height: 24px;
@@ -313,4 +325,412 @@
     position: absolute;
     right: 0px;
     bottom: 0px;
+}
+
+
+/*公司介绍*/
+.company_wrap{
+	width: 100%;
+	height: 923px;
+	background: url(../img/mokuai02_bg.jpg)top center;
+}
+.company_wrap .company h1{
+	padding-top: 111px;
+	display: block;
+	text-align: center;
+	font-size: 54px;
+	font-family: "华文楷体";
+	color: #fff;
+}
+.company_wrap .company h2{
+	font-size: 18px;
+	font-family: "华文楷体";
+	color: #fff;
+}
+.company_wrap .company>.b{
+	margin-top: 12px;
+	padding-bottom: 70px;
+}
+
+//
+.company_wrap .company .product_right{
+	margin-left: 50px;
+	position: absolute;
+	display: none;
+}
+.company_wrap .company .product_right.now{
+	display: block;
+}
+.company_wrap .company .product_right .left_picture{
+	float: left;
+}
+.company_wrap .company .product_right .left_picture img{
+	height: 443px;
+}
+.company_wrap .company .product_right .right_content{
+	width: 623px;
+	float: right;
+}
+.company_wrap .company .product_right .right_content h3.title{
+	font-size: 30px;
+    font-family: "华文楷体";
+    width: 100%;
+    height: 61px;
+    color: #fff;
+    background:url(../img/pen_line.png)no-repeat bottom left;
+    position: relative;
+    margin-left: 50px;
+  
+}
+.company_wrap .company .product_right .right_content h3 span{
+	width: 61px;
+    height: 54px;
+    display: block;
+    position: absolute;
+    right: 9px;
+    bottom: 0px;
+    background: url(../img/pen.png);
+}
+/*两个div  包含里面的文字*/
+.company_wrap .company .product_right .right_content .top{
+	height: 180px;
+	width: 100%;
+	/*background: aqua;*/
+	margin-left: 50px;
+}
+.company_wrap .company .product_right .right_content .top .top_left{
+	float: left;
+	margin-top: 40px;
+	margin-left: 12px;
+}
+.company_wrap .company .product_right .right_content .top .top_right{
+	float: right;
+    width: 474px;
+    color: #BBA9D7;
+    margin-top: 36px;
+}
+.company_wrap .company .product_right .right_content .top .top_right h4{
+	font-size: 24px;
+    font-family: "华文楷体";
+}
+.company_wrap .company .product_right .right_content .top .top_right p{
+	 height: 23px;
+    line-height: 23px;
+    font-size: 14px;
+    margin-top: 10px;
+    font-family:"华文楷体";
+}
+.company_wrap .company .product_right .right_content .bottom{
+	height: 172px;
+	width: 100%;
+	/*background: aqua;*/
+	margin-top: 30px;
+	position: relative;
+	margin-left: 50px;
+}
+.company_wrap .company .product_right .right_content .bottom p{
+	height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    font-family:"华文楷体";
+    color: #BBA9D7;
+}
+.company_wrap .company .product_right .right_content .bottom h5{
+	width: 216px;
+    height: 52px;
+    color: #BBA9D7;
+    font-size: 18px;
+    font-family: "华文楷体";
+    text-align: center;
+    line-height: 52px;
+    background: url(../img/yinhao_zuo.png)no-repeat top left,url(../img/yinhao_you.png)no-repeat right bottom;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+/*业务范围（business）*/
+
+.business_wrap>img{
+	display: block;
+	margin: 0 auto;
+}
+.business_wrap .business_content .top .img2.now{
+	animation: search_img 0.5s;
+    animation-fill-mode:forwards;
+}
+@keyframes search_img {
+    0%{
+        background-position: 0 0px;
+    }
+    100%{
+        background-position: 0 -67px;
+    }
+}
+.business_wrap h1,h2{
+	text-align: center;
+}
+.business_wrap>h1{
+	font-size: 54px;
+	font-family: "华文楷体";
+	color: #301759;
+}
+.business_wrap>h2{
+	font-size: 18px;
+	font-family: "华文楷体";
+	color: #301759;
+}
+.business_wrap>.b{
+	margin-top: 20px;
+}
+.business_wrap .business_content{
+	border-bottom: 2px dashed #6B696F;
+	padding-bottom: 55px;
+}
+.business_wrap .top{
+	margin-top: 40px;
+}
+.business_wrap .top>*{
+	float: left;
+}
+.business_wrap .top h3{
+	font: 90px "宋体";
+	color: #6B696F;
+	
+}
+.business_wrap .top>.a{
+	
+	width: 177px;
+	height: 52px;
+	padding-left: 170px;
+	margin-top: 32px;
+}
+.business_wrap .top>.a h4{
+	font: 24px "华文楷体";
+	color: #5D556F;
+}
+.business_wrap .top>.a h5{
+	font: 14px "华文楷体";
+	color: #5D556F;
+}
+.business_wrap .top>.img1{
+	position: absolute;
+	left: 50%;
+	margin-left: -58px;
+}
+.business_wrap .top>.b{
+	margin-left: 190px;
+	margin-top: 32px;
+}
+.business_wrap .top>.b p{
+	font: 14px "华文楷体";
+	color: #6B696F;
+}
+.business_wrap .top .img2{
+	float: right;
+	height: 67px;
+	width: 67px;
+	background: url(../img/business_zhankaishouqi.png);
+	margin-top: 32px;
+}
+.business_wrap .bottom{
+	width: 803px;
+	/*height: 200px;*/
+	padding-top: 74px;
+	font: 14px "华文楷体";
+	color: #6B696F;
+	margin: 0 auto;
+	line-height: 24px;
+	display: none;
+}
+
+//团队介绍
+.group_wrap>h1,h2{
+	text-align: center;
+}
+.group_wrap>h1{
+	font-size: 54px;
+	font-family: "华文楷体";
+	color: #301759;
+	text-align: center;
+}
+.group_wrap>h2{
+	font-size: 18px;
+	font-family: "华文楷体";
+	color: #301759;
+}
+.group_wrap>.a{
+	display: block;
+	margin: 0 auto;
+}
+.group_wrap>.b{
+	margin-top: 20px;
+	display: block;
+	margin: 0 auto;
+}
+.group_wrap .group .group_content_wrap{
+	width: 1100px;
+	height: 184px;
+	padding-top: 102px;
+	overflow: hidden;
+}
+.group_wrap .group .group_content_wrap .group_content{
+	width: 3300px;
+	height: 184px;
+	
+}
+.group_wrap .group_content_wrap .group_content .team{
+	border: 1px solid #F1F1F5;
+	height: 183px;
+	width: 539px;
+	position: relative;
+	float: left;
+}
+.group_wrap .group_content_wrap .group_content .team1{
+	/*float: right;*/
+}
+.group_wrap .group_content_wrap .group_content .team>*{
+	position: absolute;
+} 
+.group_wrap .group_content_wrap .group_content .team>img{
+	top: -63px;
+	left: 25px;
+}
+.group_wrap .group_content_wrap .group_content .team .people{
+	width: 220px;
+	height: 70px;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+}
+.group_wrap .group_content .team .people p{
+	font: 24px "华文楷体";
+	color: #5F4B81;
+}
+.group_wrap .group_content .team .people span{
+	font: 18px "华文楷体";
+	color: #5F4B81;
+}
+.group_wrap .group_content .team .description{
+	width: 233px;
+	font: 15px "华文楷体";
+	color: #838385;
+	top: 30px;
+	right: 95px;
+	line-height: 23px;
+}
+.group_wrap .group_content .team .emil{
+	width: 246px;
+	height: 47px;
+	border: 1px solid #D9D9E1;
+	left: 222px;
+	top: 121px;
+}
+.group_wrap .group_content .team .emil:hover{
+	border: 1px solid blueviolet;
+	transition: all 1s;
+}
+.group_wrap .group_content .team .emil i{
+	background: #D9D9E1 url(../img/team_contact.png)no-repeat 12px 17px;
+	float: left;
+	width: 46px;
+	height: 47px;
+}
+.group_wrap .group_content .team .emil span{
+	display: block;
+	float: right;
+	width: 200px;
+	height: 47px;
+	background: #F1F1F5;
+	text-align: center;
+	line-height: 47px;
+}
+.group_wrap .group_content .team .lianjie{
+	width: 46px;
+    height: 183px;
+    top: 0px;
+    right: 10px;
+}
+.group_wrap .group_content .team .lianjie>div{
+	background: #2999D5 url(../img/team_contact.png) no-repeat;
+	height: 46px;
+	width: 100%;
+}
+.group_wrap .group_content .team .lianjie>div:hover{
+	background-color:#168BCA;
+}
+.group_wrap .group_content .team .lianjie .xinlang{
+	background-position: 12px -31px;
+}
+.group_wrap .group_content .team .lianjie .tengxun{
+	background-position: 12px -80px;
+}
+.group_wrap .group_content .team .lianjie .github{
+	background-position: 12px -127px;
+}
+.group_wrap .group_content .team .lianjie .weixin{
+	background-position: 12px -169px;
+}
+
+//团队介绍上面导航的小图标
+.g{
+	position: relative;
+	height: 600px;
+}
+.group_wrap{
+	position: relative;
+	height: 600px;
+}
+.point{
+	width: 218px;
+	height: 30px;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	margin-left: -109px;
+	background: url(../img/next&prev_line.png) 
+	no-repeat left center;
+}
+
+.group_wrap .point ._left{
+	
+	left: 0px;
+	width: 28px;
+	height: 28px;
+	float:left;
+}
+
+.group_wrap .point ._right{
+	width: 28px;
+	height: 28px;
+	float: right;
+}
+
+.group_wrap .point ._center{
+	display: inline-block;
+	width: 46px;
+	height: 16px;
+	border-radius: 8px 8px 8px 8px;
+	border:2px solid #E2E2E2;
+	position: absolute;
+	top: 50%;
+	margin-top: -8px;
+	left: 50%;
+	margin-left: -23px;
+	background-color: #F1F2F6;
+}
+/*小图标里面的小圆点*/
+.group_wrap .point ._center ul li{
+	width: 6px;
+    height: 6px;
+    float: left;
+    margin-left: 5px;
+    border-radius: 7px;
+    border: 1px solid #E2E2E2;
+    background: #E2E2E2;
+    margin-top: 3px;   
+}
+.group_wrap .point ._center .blue{
+	background: #006FD6;
+	position: relative;
 }
