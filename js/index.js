@@ -1,5 +1,6 @@
 $(function(){
 	$("#head").load("header.html");
+	$("#footer").load("footer.html");
 	
 	!(function(){
 		
@@ -199,7 +200,7 @@ $(function(){
 	
 	//团队介绍
 	!(function(){
-		var $group_content = $(".group_wrap .group_content")
+		var $group_content_wrap = $(".group_wrap .group_content_wrap")
         var $_prev = $(".group_wrap .point ._left")
         var $_next = $(".group_wrap .point ._right ")
         var index = 0;
@@ -222,11 +223,11 @@ $(function(){
 
             //让 $group_content 每执行一次就往左边走-1100px,当走完后瞬间把第一个group_content放到最后面去,然后把位置改成0的位置;
             //并且关闭当前的这个动画,也将就是还原ifRun;
-            $group_content.animate({"left": "-1100px"}, 1000, "backIn", function () {
-                $group_content.find(".team").eq(0).appendTo($group_content);
-                console.log($group_content)
+            $group_content_wrap.animate({"left": "-1100px"}, 1000, "backIn", function () {
+                $group_content_wrap.find(".group_content").eq(0).appendTo($group_content_wrap);
+          
                 
-                $group_content.css("left", "0");
+                $group_content_wrap.css("left", "0");
                 ifRun = false;
                 fnRun();
 
@@ -236,7 +237,7 @@ $(function(){
             if (index > 2) {
                 index = 0
             }
-            $points.removeClass("now").eq(index).addClass("now")
+            $points.removeClass("blue").eq(index).addClass("blue")
         }
         /*向右边移动函数*/
         function toRight() {
@@ -245,9 +246,9 @@ $(function(){
             }
             ifRun = true;
             clearInterval(timeOut);
-            $group_content.find(".team_box").eq(2).prependTo($group_content);
-            $group_content.css("left", "-1100px")
-            $group_content.stop().animate({"left": "0px"}, 1000, "backIn", function () {
+            $group_content_wrap.find(".group_content").eq(2).prependTo($group_content_wrap);
+            $group_content_wrap.css("left", "-1100px")
+            $group_content_wrap.stop().animate({"left": "0px"}, 1000, "backIn", function () {
                 ifRun = false;
                 fnRun();
             })
@@ -269,7 +270,7 @@ $(function(){
 
         //点击左边按钮时候
         $_prev.click(function () {
-        	alert("aa")
+        	
             toRight();
         })
 
@@ -283,7 +284,7 @@ $(function(){
         fnRun();
 
         /*当鼠标移动到team的时候,静止自动轮播,移出后自动轮播*/
-        $group_content.find(".team").hover(function () {
+        $group_content_wrap.find(".group_content").hover(function () {
             clearInterval(timeOut);
         }, function () {
             fnRun()

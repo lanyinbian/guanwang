@@ -568,15 +568,21 @@
 	display: block;
 	margin: 0 auto;
 }
-.group_wrap .group .group_content_wrap{
-	width: 1100px;
-	height: 184px;
-	padding-top: 102px;
+.group_wrap .group {
 	overflow: hidden;
+	position: relative;
+	height: 100%;
 }
-.group_wrap .group .group_content_wrap .group_content{
+.group_wrap .group .group_content_wrap{
 	width: 3300px;
 	height: 184px;
+	padding-top: 102px;
+	position: absolute;
+}
+.group_wrap .group .group_content_wrap .group_content{
+	width: 1100px;
+	height: 184px;
+	float: left;
 	
 }
 .group_wrap .group_content_wrap .group_content .team{
@@ -587,7 +593,7 @@
 	float: left;
 }
 .group_wrap .group_content_wrap .group_content .team1{
-	/*float: right;*/
+	/*margin-left: 10px;*/
 }
 .group_wrap .group_content_wrap .group_content .team>*{
 	position: absolute;
@@ -733,4 +739,315 @@
 .group_wrap .point ._center .blue{
 	background: #006FD6;
 	position: relative;
+}
+
+
+
+/*合作机构开始*/
+.hezuo_wrap{
+    min-width:1100px;
+    background:#FFF;
+}
+.hezuo_wrap .mokuai>img{
+	display: block;
+	margin: 0 auto;
+}
+.hezuo_wrap .mokuai>h1,h2{
+	text-align: center;
+}
+.hezuo_wrap .mokuai>h1{
+	margin-top:75px; 
+	line-height:60px;
+	font: 54px "华文楷体";
+	color: #301759;
+}
+.hezuo_wrap .mokuai>h2{
+	font: 18px arial;
+	color: #301759;
+}
+.hezuocontent_wrap{
+    color:#5f4c82;
+    overflow:hidden;
+    padding-top:75px;
+}
+.hezuocontent_wrap .partners{
+    float:left;
+    width:550px;
+    border-right:1px solid #d3d3d3;
+    margin-bottom:120px;
+}
+.hezuocontent_wrap h1{
+    font:36px "华文楷体";
+    color: #5F4B81;
+    text-align: center;
+}
+.hezuocontent_wrap h2{
+    font-size:18px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    padding-left:6px;
+    letter-spacing:6px;
+}
+.partners_box{
+    margin-left:18px;
+}
+.partners_box > div, .users_box > div{
+    width:173px;
+    height:80px;
+    float:left;
+    margin-top:70px;
+}
+.partners_box a:hover, .users_box a:hover{
+    opacity:0.8;
+    filter:alpha(opacity=80);
+}
+.partners_box img, .users_box img{
+    max-height:80px;
+}
+.users_box{
+    width:520px;
+}
+.hezuocontent_wrap .users{
+    float:left;
+    width:474px;
+    margin-left:75px;
+    position:relative;
+}
+.hezuocontent_wrap .users .more{
+    position:absolute;
+    right:35px;
+    top:15px;
+    background:url(../img/yonghu_morebg.png) no-repeat -69px 0;
+    width:69px;
+    height:26px;
+}
+.hezuocontent_wrap .users .more:hover{
+    background-position:0 0px;
+    transition:background 0.3s ease 0s;
+}
+
+.hezuo_wrap .mokuai{
+	position: relative;
+}
+.hezuo_wrap .mokuai .yonghu_more{
+	width: 69px;
+	height: 26px;
+	position: absolute;
+	top: 307px;
+	right: 82px;
+	border: 1px solid #E2E2E2;
+	border-radius: 13px;
+	background: url(../img/yonghu_morebg.png)right top;
+}
+.hezuo_wrap .mokuai .yonghu_more:hover{
+	background-position: 0 0;
+}
+
+
+/*联系我们开始*/
+.input_wrap{
+    margin-top:20px;
+    overflow:hidden;
+}
+ .lianxi>img{
+	display: block;
+	margin: 0 auto;
+}
+.lianxi>h1,h2{
+	text-align: center;
+}
+.lianxi>h1{
+	margin-top:75px; 
+	line-height:60px;
+	font: 54px "华文楷体";
+	color: #301759;
+}
+.lianxi>h2{
+	font: 18px arial;
+	color: #301759;
+}
+.lianxi_ways{
+    margin-top:50px;
+    overflow:hidden;
+}
+.lianxi .input_box{
+    height:47px;
+    width:333px;
+    background:#fff;
+    border:1px solid #dedfe3;
+    margin-bottom:27px;
+    float:left;
+}
+.lianxi .input_box:hover{
+    border:1px solid #b5b5b5;
+    transition: all 0.5s ease 0s;
+}
+.lianxi .input_box i{
+    float:left;
+    width:45px;
+    height:47px;
+    background:#e7e8ec url(../img/lianxi_icons.png) 13px 14px no-repeat;
+}
+.lianxi .input_box input{
+    float:left;
+    line-height:45px;
+    height:45px;
+    color:#5f4c82;
+    font-size:16px;
+    width:268px;
+    border:none 0;
+    padding-left:18px;
+    outline:none;
+    font-family:STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica;
+}
+.lianxi .sentbtn_box{
+    background:#168bcb;
+    border-color:#2999d6;
+    cursor:pointer;
+}
+.lianxi .sentbtn_box:hover{
+    background:#0d74ac;
+    border:1px solid #0d74ac;
+    transition: all 0.5s ease 0s;
+}
+.lianxi .sentbtn_box i{
+    background-color:#2999d6;
+    background-position:-179px 14px;
+}
+.lianxi .sentbtn_box span{
+    float:left;
+    line-height:45px;
+    color:#5f4c82;
+    font-size:16px;
+    width:200px;
+    padding-left:18px;
+    text-align:center;
+    color:#fff;
+}
+.lianxi .textarea_box{
+    height:212px;
+    width:720px;
+    margin-right:39px;
+}
+.lianxi .textarea_box i{
+    height:212px;
+}
+.lianxi .input_box textarea{
+    float:left;
+    line-height:27px;
+    color:#5f4c82;
+    font-size:16px;
+    width:640px;
+    padding-right:17px;
+    height:200px;
+    border:none 0;
+    text-align:left;
+    padding-left:18px;
+    padding-top:10px;
+    outline:none;
+    resize:none;
+    font-family:STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica;
+}
+.lianxi .focus_input_box{
+    border:1px solid #a7a7a7;
+}
+.way_one{
+    width:345px;
+    height:250px;
+    float:left;
+}
+.way_one > *{
+    float:left;
+}
+.way_one > img{
+    position:relative;
+    top:24px;
+}
+.way_one .way_content{
+    margin-left:27px;
+}
+.way_one h1{
+    line-height:60px;
+    height:60px;
+    width:210px;
+    background:url(../img/lianxi_kuaier_bg.png) no-repeat bottom left;
+    color:#5f4c82;
+    margin-bottom:14px;
+    font: 24px "华文楷体";
+    color: #5F4B81;
+}
+.way_one .way_content p{
+    line-height:32px;
+    color:#524d5c;
+    font: 16px "华文楷体";
+    color: #5F4B81;
+}
+
+
+
+/*地图*/
+.the_map{
+    position:relative;
+}
+.map_topimg{
+    width:1100px;
+    position:relative;
+    margin:0 auto;
+    z-index:999;
+}
+.map_topimg img{
+    position:absolute;
+    top:0;
+    left:0;
+}
+.map_bottomimg{
+    background:url(../img/map_bottomimg.png) top center no-repeat;
+    position:absolute;
+    bottom:0;
+    left:0;
+    height:33px;
+    width:100%;
+    min-width:1100px;
+    background-color:transparent;
+}
+.all_map_baidu{
+    height: 660px;
+    overflow: hidden;
+    min-width:1100px;
+    margin: 0;
+    font-family: "宋体";
+}
+
+
+/*地图模块*/
+.map_wrap {
+    height: 662px;
+    position: relative;
+    overflow: hidden;
+
+}
+.map_wrap .map_top{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -550px;;
+    z-index: 1000;
+}
+.map_wrap #map{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 662px;
+    /*background-color: red;*/
+
+}
+
+.map_wrap .bottom_map{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url("../img/map_bottomimg.png") no-repeat center bottom;
+    height: 33px;
+    width: 100%;
 }
