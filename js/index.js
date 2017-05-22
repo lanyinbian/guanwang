@@ -10,11 +10,28 @@ $(function(){
 
        function faIN() {
        	
-           $(".banner_wrap_picture ul").eq(i).fadeIn().siblings().fadeOut();
+           $(".banner_wrap_picture ul").eq(i).fadeIn().siblings().fadeOut(); //其他图淡出  选中的图淡入
 
-          $(".point ._center ul li").eq(i).addClass("blue").siblings().removeClass("blue")
+          $(".point ._center ul li").eq(i).addClass("blue").siblings().removeClass("blue") //图变化时  下面的小点变蓝色
+          
+          imgrunning()
            
        }
+       
+       //给里面的图片添加动画
+       function imgrunning() {
+            $(".banner_wrap ul  ").eq(i).siblings().find("img").eq(0).removeClass("animated fadeInLeft")
+            $(".banner_wrap ul  ").eq(i).siblings().find("img").eq(1).removeClass("animated fadeInRight")
+            $(".banner_wrap ul  ").eq(i).siblings().find("img").eq(2).removeClass("animated fadeInUp")
+
+            $(".banner_wrap ul  ").eq(i).find("img").eq(0).addClass("animated fadeInLeft")
+            $(".banner_wrap ul  ").eq(i).find("img").eq(1).addClass("animated fadeInRight")
+            $(".banner_wrap ul  ").eq(i).find("img").eq(2).addClass("animated fadeInUp")
+
+        }
+       
+       
+       
 		//左按钮
 		$(".point ._left").click(function () {
 			
@@ -30,6 +47,7 @@ $(function(){
 		$(".point ._left img").hover(function(){
 		
 			this.src="./img/prev_jiantou_hover.png";
+			
 			
 		},function(){
 			this.src="./img/prev_jiantou.png"
@@ -123,12 +141,16 @@ $(function(){
 			
 			var num=i;
 			$(this).click(function(){
-			alert("aa")	
+			
 			if(num<indexNum){
-				fn("fadeInRight")
+				indexNum=num;
+				
+				fn("fadeInRight");
 			}
 			if(num>indexNum){
-				fn("fadeInLeft")
+				indexNum=num;
+				
+				fn("fadeInLeft");
 			}
 			})
 			

@@ -1,0 +1,100 @@
+.list_wrap>h1{
+	font-size: 54px;
+	font-family: "华文楷体";
+	color: #301759;
+	text-align: center;
+	margin-top: 126px;
+}
+.list_wrap>h2{
+	font-size: 18px;
+	font-family: "华文楷体";
+	color: #301759;
+	text-align: center;
+}
+.list_wrap>img{
+	display: block;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+.list_wrap>h3{
+	background: url(../img/pen_line_long.png) left bottom no-repeat;
+	display: block;
+	width: 100%;
+	height: 54px;
+	font: 30px "华文楷体";
+	color: #301759;
+	text-indent: 16px;
+	margin-bottom: 38px;
+	position: relative;
+}
+
+.list_wrap>h3 span{
+	background: url(../img/pen.png);
+	display: block;
+	height: 54px;
+	width: 61px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.list_wrap>h3 span:hover{
+	background: url(../img/pen_hover.png);
+	cursor: pointer;
+}
+
+.list_more ul li{
+	width: 100%;
+	height: 244px;
+	
+	/*background: paleturquoise;*/
+}
+.list_more ul li .a{
+	width: 536px;
+	height: 100%;
+	position: relative;
+	background: #fff;
+	float: left;
+	margin-bottom: 40px;
+	border: 1px solid #fff;
+}
+.list_more ul li .a:hover{
+	border: 1px solid #86759E;
+	transform: translateY(-10px);
+	cursor: pointer;
+	transition: all 1s;
+}
+.list_more ul li .b{
+	float: right;
+}
+.list_more ul li .a .a_left{
+	position: absolute;
+	top: 50%;
+	margin-top: -84px;
+	margin-left: 20px;
+}
+.list_more ul li .a .a_right{
+	float: right;
+	margin-right: 16px;
+}
+.list_more ul li .a .a_right>h1{
+	font: 20px "华文楷体";
+	color: #454447;
+	margin-top: 57px;
+}
+.list_more ul li .a .a_right>h2{
+	font: 14px "华文楷体";
+	color: #454447;
+}
+.list_more ul li .a .a_right>p{
+	color: #46464A;
+	font: 14px "华文楷体";
+}
+
+/*加一个图片*/
+ .body_bottom{
+	background: url(../img/map_bottomimg.png) no-repeat bottom center;
+	width: 100%;
+	height: 33px;
+	margin-top: 125px;
+}
