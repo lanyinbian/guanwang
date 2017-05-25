@@ -1,0 +1,291 @@
+.article_all{
+	background: #fff;
+	padding-top: 75px;
+	
+}
+.content_wrap{
+	width: 780px !important;
+	
+}
+.content_wrap>h1,h2{
+	text-align-last: center;
+}
+.content_wrap>img{
+	display: block;
+	margin: 0 auto;
+	margin-top: 15px;
+}
+.content_wrap>h1{
+	font: 54px "华文楷体";
+	color: #301759;
+	
+}
+.content_wrap>h2{
+	font: 18px arial;
+	color: #301759;
+}
+.content_wrap>h3{
+	font: 30px "华文楷体";
+	color: #301759;
+	background: url(../img/pen_line_long.png)no-repeat left bottom;
+	width: 100%;
+	height: 54px;
+	position: relative;
+}
+.content_wrap>h3 span{
+	display: block;
+	width: 61px;
+	height: 54px;
+	background: url(../img/pen.png)no-repeat;
+	position: absolute;
+	right: -46px;
+	bottom: 0px;
+	
+}
+.content_wrap>h3 span:hover img{
+	background: url(../img/pen_hover.png);
+	cursor: pointer;
+}
+.content_wrap .auther span{
+	display: inline-block;
+	font: 14px "华文楷体";
+	color: #6B696F;
+	padding-top: 17px;
+}
+.content_wrap .article_content .img1 img{
+	display: block;
+	width: 780px;
+	height: 230px;
+	margin-top: 60px;
+}
+.content_wrap .article_content p{
+	font: 14.8px "华文楷体";
+	color: #46464A;
+	
+}
+.content_wrap .article_content .p1{
+	font: 22px "华文楷体";
+	color: #46464A;
+	margin-bottom: 22px;
+	margin-top: 30px;
+}
+
+.like_btn_wrap{
+	width:73px ;
+	height: 73px;
+	overflow: hidden;
+	z-index: 100;
+	margin-left: 500px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.like_btn_wrap:hover{
+	width: 214px;
+	transition: 1s;
+}
+.like_btn_wrap .like_showbox{
+	position: relative;
+	width: 214px;
+}
+
+.like_btn_wrap .like_showbox .like_btn{
+	width: 73px;
+	height: 73px;
+	border-radius: 50%;
+	background: url(../img/article_iflike.png);
+	/*margin-left: 500px;*/
+    z-index: 100;;
+}
+.like_btn_wrap .like_showbox .like_btn:hover{
+	animation: fn 0.5s;
+}
+@keyframes fn{
+	0% {
+        transform: scale(1.2, 0.8);
+    }
+    1% {
+        transform: scale(1.18, 0.82);
+    }
+    2% {
+        transform: scale(1.16, 0.84);
+    }
+    3% {
+        transform: scale(1.13, 0.87);
+    }
+    4% {
+        transform: scale(1.1, 0.9);
+    }
+    5% {
+        transform: scale(1.07, 0.93);
+    }
+    6% {
+        transform: scale(1.04, 0.96);
+    }
+    7% {
+        transform: scale(1.01, 0.99);
+    }
+    8% {
+        transform: scale(0.99, 1.01);
+    }
+    9% {
+        transform: scale(0.97, 1.03);
+    }
+    10% {
+        transform: scale(0.95, 1.05);
+    }
+    11% {
+        transform: scale(0.94, 1.06);
+    }
+    12% {
+        transform: scale(0.93, 1.07);
+    }
+    13% {
+        transform: scale(0.93, 1.07);
+    }
+    14% {
+        transform: scale(0.93, 1.07);
+    }
+    15% {
+        transform: scale(0.93, 1.07);
+    }
+    16% {
+        transform: scale(0.94, 1.06);
+    }
+    17% {
+        transform: scale(0.94, 1.06);
+    }
+    18% {
+        transform: scale(0.95, 1.05);
+    }
+    19% {
+        transform: scale(0.96, 1.04);
+    }
+    20% {
+        transform: scale(0.98, 1.02);
+    }
+    21% {
+        transform: scale(0.99, 1.01);
+    }
+    22% {
+        transform: scale(1, 1);
+    }
+    23% {
+        transform: scale(1, 1);
+    }
+    24% {
+        transform: scale(1.01, 0.99);
+    }
+    25% {
+        transform: scale(1.02, 0.98);
+    }
+    26% {
+        transform: scale(1.02, 0.98);
+    }
+    27% {
+        transform: scale(1.02, 0.98);
+    }
+    28% {
+        transform: scale(1.03, 0.97);
+    }
+    29% {
+        transform: scale(1.03, 0.97);
+    }
+    30% {
+        transform: scale(1.02, 0.98);
+    }
+    31% {
+        transform: scale(1.02, 0.98);
+    }
+    32% {
+        transform: scale(1.02, 0.98);
+    }
+    33% {
+        transform: scale(1.02, 0.98);
+    }
+    34% {
+        transform: scale(1.01, 0.99);
+    }
+    35% {
+        transform: scale(1.01, 0.99);
+    }
+    36% {
+        transform: scale(1.01, 0.99);
+    }
+    37% {
+        transform: scale(1, 1);
+    }
+    38% {
+        transform: scale(1, 1);
+    }
+    39% {
+        transform: scale(1, 1);
+    }
+    40% {
+        transform: scale(0.99, 1.01);
+    }
+    41% {
+        transform: scale(0.99, 1.01);
+    }
+    42% {
+        transform: scale(0.99, 1.01);
+    }
+
+    43% {
+        transform: scale(0.99, 1.01);
+    }
+    44% {
+        transform: scale(0.99, 1.01);
+    }
+    45% {
+        transform: scale(0.99, 1.01);
+    }
+    46% {
+        transform: scale(0.99, 1.01);
+    }
+    47% {
+        transform: scale(0.99, 1.01);
+    }
+    48% {
+        transform: scale(0.99, 1.01);
+    }
+    49% {
+        transform: scale(1, 1);
+    }
+}
+.like_btn_wrap .like_showbox .like_nomber{
+	width: 135px;
+	height: 35px;
+	background: url(../img/article_iflike_nomberbg.png)no-repeat;
+	position: absolute;
+	top: 18px;
+	left: 73px;
+}
+
+.like_tips_wrap{
+	width: 100%;
+	height: 81px;
+	padding-bottom: 88px;
+	position: relative;
+}
+.like_tips_wrap .like_tips{
+	height: 81px;
+	width: 252px;
+	font: 24px "华文楷体";
+	color: #311859;
+	line-height: 81px;
+	text-align: center;
+	background: #F1F1F5;
+	margin: 0 auto;
+	border-radius: 8px;
+	position: absolute;
+	top: -300px;
+	left: 442px;
+	opacity: 0;
+}
+
+
+.link_footer_img{
+	height: 33px;
+	width: 100%;
+	background:#fff url(../img/map_bottomimg.png)top center;
+}

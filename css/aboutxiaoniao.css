@@ -1,0 +1,511 @@
+.header_wrap {
+	width: 100%;
+	height: 50px;
+	background: url(../img/header_bg.jpg);
+}
+.header_wrap .header{
+	width: 1100px;
+	margin: 0 auto;
+}
+.header_wrap .header .logo a{
+	background: url(../img/aboutxiaoniao/logo.png) no-repeat;
+	display: block;
+	width: 132px;
+	height: 50px;
+	text-indent: -9999px;
+	float: left;
+}
+.header_wrap .header .nav_wrap{
+	float: left;
+	margin-left: 50px;
+}
+.header_wrap .header .nav_wrap .nav_piece{
+	float: left;
+	width: 110px;
+	height: 100%;
+	
+}
+
+.header_wrap .header .nav_wrap .nav_piece>h1{
+	text-align: center;
+	margin-top: 15px;
+	font: 16px "华文楷体";
+	color: #FEFEFE;
+	margin-bottom: 5px;
+}
+.header_wrap .header .nav_wrap .nav_piece.now{
+	background: url(../img/nav_now_bg.png) no-repeat  bottom;
+	color: #fff;
+	font-size: 18px;
+}
+
+.main_wrap{
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+	position: relative;
+}
+.main_wrap .main_slide_wrap{
+	width: 100%;
+	position: absolute;
+}
+.main_wrap .main_slide_wrap .wrap_block{
+	width: 100%;
+	height: 600px;
+	/*overflow: hidden;*/
+}
+.main_wrap .main_slide_wrap .kaitou{
+	background: #221236;
+	position: relative;
+}
+.main_wrap .main_slide_wrap .kaitou #welcomeIconimg{
+	display: block;
+	margin: 0 auto;
+}
+.main_wrap .main_slide_wrap .kaitou *{
+	color: #fff;
+	text-align: center;
+}
+.main_wrap .main_slide_wrap .kaitou .title{
+	font: 44px "华文楷体";
+}
+.main_wrap .main_slide_wrap .kaitou .en_title{
+	font: 20px arial;
+}
+.main_wrap .main_slide_wrap .kaitou .ems{
+	font: 48px "华文楷体";
+	margin-top: 23px;
+	height: 75px;
+	position: relative;
+}
+.main_wrap .main_slide_wrap .kaitou .ems .yinhao1_zuo{
+	position: absolute;
+	top: 0;
+	left: 300px;
+}
+.main_wrap .main_slide_wrap .kaitou .ems .yinhao1_you{
+	position: absolute;
+	bottom: 0;
+	right: 300px;
+}
+.main_wrap .main_slide_wrap .kaitou>p{
+	display: block;
+	font: 20px "华文楷体";
+	height: 28px;
+	line-height: 28px;
+}
+.main_wrap .main_slide_wrap .kaitou .img_bottom{
+	width: 58px;
+	height: 58px;
+	position: absolute;
+	background: url(../img/aboutxiaoniao/donext.png)left bottom;
+	bottom: 0;
+	left: 50%;
+	margin-left: -29px;
+}
+.main_wrap .main_slide_wrap .kaitou .img_bottom:hover{
+	background-position: left top;
+}
+
+/*.main_wrap .main_slide_wrap .gaishu_slider{
+	position: relative;
+}
+.main_wrap .main_slide_wrap .gaishu_slider .gaishu_block{
+	position: absolute;
+}*/
+.main_wrap .main_slide_wrap .gaishu{
+	background: #fff;
+	width: 100%;
+	position: relative;
+}
+.main_wrap .main_slide_wrap .gaishu .leftRight{
+	position: relative;
+	z-index: 100;
+}
+.main_wrap .main_slide_wrap .gaishu .leftRight .goleft{
+	width: 58px;
+	height: 58px;
+	border-radius: 50%;
+	background: url(../img/aboutxiaoniao/goleft.png)left top;
+	position: absolute;
+	margin-top: 422px;
+	left: 10%;
+}
+.main_wrap .main_slide_wrap .gaishu .leftRight .goleft.now{
+	opacity: 0.5;
+}
+.main_wrap .main_slide_wrap .gaishu .leftRight .goright.now{
+	opacity: 0.5;
+}
+.main_wrap .main_slide_wrap .gaishu .leftRight .goleft:hover{
+	background-position: right top;
+}
+.main_wrap .main_slide_wrap .gaishu .leftRight .goright{
+	width: 58px;
+	height: 58px;
+	border-radius: 50%;
+	background: url(../img/aboutxiaoniao/goright.png)right top;
+	position: absolute;
+	top: 50%;
+	margin-top: 422px;
+	right: 10%;
+}
+.main_wrap .main_slide_wrap .gaishu .leftRight .goright:hover{
+	background-position: left top;
+}
+.main_wrap .main_slide_wrap .gaishu .gaishu_slider{
+	position: relative;
+	left: 50%;
+	margin-left: -450px;
+}
+.main_wrap .main_slide_wrap .gaishu .gaishu_slider .gaishu_block{
+	position: absolute;
+	
+}
+.main_wrap .main_slide_wrap .gaishu_block_content #_title{
+	font: 54px "华文楷体";
+	color: #301759;
+	padding-top: 70px;
+}
+.main_wrap .main_slide_wrap .gaishu_block_content .ems{
+	width: 627px;
+	height: 87px;
+	position: relative;
+	margin: 0 auto;
+}
+.main_wrap .main_slide_wrap .gaishu_block_content .ems .yinhao_zuo{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.main_wrap .main_slide_wrap .gaishu_block_content .ems .yinhao_you{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.main_wrap .main_slide_wrap .gaishu_block_content .ems span{
+	display: inline-block;
+	width: 539px;
+	height: 87px;
+	padding-top: 5px;
+	margin: 0 auto;
+	text-indent: 35px;
+}
+.main_wrap .main_slide_wrap .gaishu_block_content .app_img{
+	margin-top: 76px;
+}
+.main_wrap .main_slide_wrap .gaishu_block_content .app_img img{
+	margin-right: 36px;
+}
+
+.main_wrap .gs2_block{
+	background: #fff;
+}
+.main_wrap .gs2_block .gaishu_block_content>img{
+	display: block;
+	margin:  auto;
+	margin-top: 32px;
+}
+.main_wrap .gs2_block .gaishu_block_content .block{
+	width: 100%;
+	height: 100px;
+	margin-top: 48px;
+	margin-bottom: 60px;
+	
+}
+.main_wrap .gs2_block .gaishu_block_content .block>img{
+	float: left;
+	margin-left: 190px;
+}
+.main_wrap .gs2_block .gaishu_block_content .block div{
+	float: left;
+	margin-left: 56px;
+}
+.main_wrap .gs2_block .gaishu_block_content .block div h1{
+	font: 30px "华文楷体";
+	color: #6B696F;
+	
+}
+.main_wrap .gs2_block .gaishu_block_content .block div h2{
+	font: 20px "华文楷体";
+	color: #6B696F;
+}
+.main_wrap .gs3_block{
+	background: #fff;
+}
+.main_wrap .gs3_block .gaishu_block_content>img{
+	display: block;
+	margin:  auto;
+	margin-top: 32px
+}
+.main_wrap .gs3_block .gaishu_block_content .ems{
+	width: 396px;
+	height: 67px;
+	margin: 0 auto;
+	margin-top: 54px;
+	position: relative;
+}
+.main_wrap .gs3_block .gaishu_block_content .ems .yinhao3_zuo{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.main_wrap .gs3_block .gaishu_block_content .ems .yinhao3_you{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.main_wrap .gs3_block .gaishu_block_content .ems span{
+	font: 38px "华文楷体";
+	color: #221256;
+}
+.main_wrap .gs3_block .gaishu_block_content p{
+	display: block;
+	width: 720px;
+	margin: 0 auto;
+	margin-top: 56px;
+	text-indent: 36px;
+	font: 20px "华文楷体";
+	color: #6B6A6F;
+	margin-bottom: 96px;
+	margin-left: 100px;
+}
+
+
+//启动动画
+.welcame_wrap.donghua{
+	background: #299AD6;
+	position: fixed;
+	/*width: 100%;*/
+	padding-top: 50px;
+	z-index: 999;
+}
+.welcame_wrap .welcame_content{
+	width: 1100px;
+    height: 538px;
+    margin: 0 auto;
+    position: relative
+}
+.welcame_wrap #welcomeIconimg{
+	display: block;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    margin-top: -100px;
+    left: 50%;
+    margin-left: -200px
+}
+.welcame_wrap *{
+	color: #fff;
+	text-align: center;
+}
+.welcame_wrap .welcome_animate_wrap{
+	position: absolute;
+	top: 50%;
+	margin-top: 200px;
+	left: 50%;
+	margin-left: -200px;
+	display: none;
+}
+.welcame_wrap .title{
+	font: 44px "华文楷体";
+}
+.welcame_wrap .en_title{
+	font: 20px arial;
+}
+.welcame_wrap .ems{
+	font: 48px "华文楷体";
+	margin-top: 23px;
+	height: 75px;
+	position: relative;
+}
+.welcame_wrap .ems .yinhao1_zuo{
+	position: absolute;
+	top: 0;
+	left: -14px;
+}
+.welcame_wrap .ems .yinhao1_you{
+	position: absolute;
+	bottom: 10px;
+	right: -14px;
+}
+.welcame_wrap>p{
+	display: block;
+	font: 20px "华文楷体";
+	height: 28px;
+	line-height: 28px;
+}
+
+
+//第三个模块
+.main_wrap .main_slide_wrap .jiazhi_block{
+	background-color: #211135;
+}
+.main_wrap .jiazhi_block .jiazhi_content{
+	color: #fff;
+	
+}
+.main_wrap .jiazhi_block>h1{
+	display: block;
+	font: 48px "华文楷体";
+	text-align: center;
+	padding-top: 110px;
+	padding-bottom: 110px;
+	color: #fff;
+}
+.main_wrap .jiazhi_block .jiazhi_content{
+	width: 964px;
+	height: 373px;
+	position: relative;
+}
+.main_wrap .jiazhi_block .jiazhi_content img{
+	position: absolute;
+	
+}
+.main_wrap .jiazhi_block .jiazhi_content .bottom_left img{
+	
+	bottom: 0;
+	left: 0;
+}
+.main_wrap .jiazhi_block .jiazhi_content .bottom_right img{
+	bottom: 0;
+	right: 0;
+}
+.main_wrap .jiazhi_block .jiazhi_content .contents_one{
+	width: 364px;
+	height: 80px;
+	margin-left: 74px;
+	float: left;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.main_wrap .jiazhi_block .jiazhi_content .contents_one .nomber{
+	height: 79px;
+	width: 79px;
+	border: 1px solid #7A7086;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 79px;
+	float: left;
+}
+.main_wrap .jiazhi_block .jiazhi_content .contents_one p{
+	display: block;
+	width: 260px;
+	float: right;
+	height: 80px;
+	margin-top: 18px;
+	font: 18px "华文楷体";
+}
+
+//小鸟掌云
+.xiaoniaoyun{
+	position: relative;
+}
+.xiaoniaoyun .yun_content #id{
+	display: block;
+	padding-top: 88px;
+	padding-bottom: 70px;
+}
+.main_wrap .xiaoniaoyun .yun_content .yun_slidebox .yun_slider{
+	position: relative;
+}
+.main_wrap .xiaoniaoyun .yun_content .yun_slidebox .yun_slider>div{
+	width: 900px;
+	height: 400px;
+	position: absolute;
+	left: 50%;
+	margin-left: -450px;
+}
+.main_wrap .xiaoniaoyun .yun_content .yun_slidebox .yun_slider>div p{
+	
+	font: 16px "宋体";
+	color: #717073;
+	line-height: 38px;
+	border-bottom: 1px solid #f0f0f0;
+}
+.main_wrap .xiaoniaoyun{
+	position: relative;
+}
+.main_wrap .xiaoniaoyun .btn_box{
+	width: 180px;
+	height: 16px;
+	position: absolute;
+	left: 50%;
+	margin-left: -90px;
+	bottom: 50px;
+	cursor: pointer;
+}
+.main_wrap .xiaoniaoyun .btn_box .yunmove_btn_left{
+	width: 78px;
+	height: 16px;
+	float: left;
+	border-radius: 8px;
+	background: #ABABAB;
+}
+.main_wrap .xiaoniaoyun .btn_box .yunmove_btn_left.blue{
+	background: #006FD5;
+}
+.main_wrap .xiaoniaoyun .btn_box .yunmove_btn_right.blue{
+	background: #006FD5;
+}
+.main_wrap .xiaoniaoyun .btn_box .yunmove_btn_right{
+	width: 78px;
+	height: 16px;
+	float: right;
+	border-radius: 8px;
+	background: #ABABAB;
+}
+
+//下载app和联系客服
+.main_wrap .app_and_contacts{
+	background: url(../img/aboutxiaoniao/app&contacts_bg.gif);
+}
+.main_wrap .app_and_contacts .app_and_contacts_content .app_content{
+	position: relative;
+}
+.main_wrap .app_and_contacts .app_and_contacts_content .app_content>*{
+	color: #fff;
+	position: absolute;
+}
+.main_wrap .app_and_contacts .app_content p{
+	font: 18px "华文楷体";
+	
+	top: 78px;
+	left: 372px;
+}
+.main_wrap .app_and_contacts .app_content h1{
+	top: 200px;
+	left: 750px;
+	font: 34px "华文楷体";
+}
+.main_wrap .app_and_contacts .app_content img{
+	top: 75px;
+	left: 312px;
+	
+}
+.main_wrap .app_and_contacts .app_and_contacts_content .contacts_content{
+	position: relative;
+}
+.main_wrap .app_and_contacts .app_and_contacts_content .contacts_content *{
+	position: absolute;
+	color: #191919;
+}
+.main_wrap .app_and_contacts .app_and_contacts_content .contacts_content h1{
+	font: 24px "华文楷体";
+	left: 750px;
+	top: 395px;
+	font-weight: 700;
+}
+.main_wrap .app_and_contacts .app_and_contacts_content .contacts_content p{
+	font: 18px "华文楷体";
+	left: 750px;
+}
+.main_wrap .app_and_contacts .app_and_contacts_content .contacts_content .p1{
+	top: 450px;
+}
+.main_wrap .app_and_contacts .app_and_contacts_content .contacts_content .p2{
+	top: 490px;
+}
+.main_wrap .app_and_contacts .app_and_contacts_content .contacts_content .p3{
+	top: 530px;
+}
