@@ -35,12 +35,13 @@ $(function() {
 	/*获取当前文章类型*/
 	function geturl(){
 		var type=window.location.search.split("=");
-		
+		console.log(type)
 		if(type){
 			return type[1]
 		}else{
 			return "";
 		}
+		
 	}
 	
 	/*点击加载更多*/
@@ -66,6 +67,7 @@ $(function() {
 			$("#content").html("");
 		}
 		var listdate=listData["listData0"+GLOBAL.pageStart].data
+//		console.log(listData)
 		var lists=listdate.list;
 		if(lists.length==0){
 			$("#content").html("<h1 style='text-align: center'>暂无数据,持续更新中</h1>");

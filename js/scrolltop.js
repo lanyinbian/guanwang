@@ -28,7 +28,9 @@ $(function(){
 
         })
 	
-	
+	$(".scroll_top .bottom").click(function(){
+		window.location.href="aboutxiaoniao.html#4"
+	})
 	
 	
 })()

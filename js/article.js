@@ -1,4 +1,7 @@
+
+
 $(function(){
+	var GLOBAL=GLOBAL||{}
 	$("#head").load("header.html");
 	$("#footer").load("footer.html");
 	
@@ -8,7 +11,7 @@ $(function(){
 		 
 		 var iflike=false;
 		 var $like_tips=$(".like_tips_wrap .like_tips")
-		 console.log($like_tips)
+		 
 		 
 		 
 		 
@@ -49,7 +52,40 @@ $(function(){
 			})
 		})
 		 
-		 
+		
+		
+		//获取url参数
+		function geturl(name){
+			var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if(r!=null)return decodeURI(r[2]);return "";
+		}
+		
+		GLOBAL.articleID=geturl("ArticleID")
+		GLOBAL.articletype=geturl("type")
+		console.log(GLOBAL.articleID)
+		console.log(GLOBAL.articletype)
+		
+		
+		
+		function loadarticledata(){
+			 var articledata=articleData[GLOBAL.articletype+GLOBAL.articleID].data;
+			 console.log(articleData)
+		     console.log(articledata)
+			
+			var updatatime=articledata.updataAt?articledata.updataAt:articledata.creatAt;
+			if(articledata!=null){
+				 $("#typeTitle").html(articledata.typeTitle);
+                $("#typeEntitle").text(articledata.typeEntitle);
+                $("#articleTitle").text(articledata.title);
+                $("#updateTime").text(updateTime);
+                $("#cover").attr("src",articledata.coverImg);
+                $("#content").html(articledata.content);
+			}
+				
+		}
+		
+		loadarticledata()
 		 
 	})()
 	
