@@ -70,23 +70,21 @@ $(function(){
 		
 		function loadarticledata(){
 			 var articledata=articleData[GLOBAL.articletype+GLOBAL.articleID].data;
-			 console.log(articleData)
-		     console.log(articledata)
+			 
 			
 			var updatatime=articledata.updataAt?articledata.updataAt:articledata.creatAt;
 			if(articledata!=null){
-				 $("#typeTitle").html(articledata.typeTitle);
+				$("#typeTitle").html(articledata.typeTitle);
                 $("#typeEntitle").text(articledata.typeEntitle);
                 $("#articleTitle").text(articledata.title);
-                $("#updateTime").text(updateTime);
-                $("#cover").attr("src",articledata.coverImg);
+                $("#updateTime").text(updatatime);
+                $("#imgcover").attr("src",articledata.coverImg);
                 $("#content").html(articledata.content);
 			}
 				
 		}
 		
-		loadarticledata()
-		 
+		loadarticledata()		 
 	})()
 	
 	

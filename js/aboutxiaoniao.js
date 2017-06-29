@@ -116,7 +116,7 @@ $(function() {
 		if(sliderindex==5){
 			sliderindex=4
 		}
-		console.log(sliderindex)
+//		console.log(sliderindex)
 
 		scrollgo()
 	})
@@ -125,7 +125,7 @@ $(function() {
 	//hash跳转
 	function hashmove(){
 		var hash=window.location.hash.slice(1);
-		
+
 		if(hash===0||hash==1||hash==2||hash==3||hash==4){
 			sliderindex=hash;
 			if(hash!=0){

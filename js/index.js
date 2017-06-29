@@ -10,7 +10,7 @@ $(function(){
 
        function faIN() {
        	
-           $(".banner_wrap_picture ul").eq(i).fadeIn().siblings().fadeOut(); //其他图淡出  选中的图淡入
+          $(".banner_wrap_picture ul").eq(i).fadeIn().siblings().fadeOut(); //其他图淡出  选中的图淡入
 
           $(".point ._center ul li").eq(i).addClass("blue").siblings().removeClass("blue") //图变化时  下面的小点变蓝色
           
@@ -81,7 +81,7 @@ $(function(){
           var num=a;
 			
           $(this).click(function () {
-          	
+          	 
               i=num;
               faIN();
           })

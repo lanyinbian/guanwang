@@ -27,7 +27,7 @@
 .content_wrap>h3{
 	font: 30px "华文楷体";
 	color: #301759;
-	background: url(../img/pen_line_long.png)no-repeat left bottom;
+	background: url(../img/pen_line_long.png)no-repeat -46px bottom;
 	width: 100%;
 	height: 54px;
 	position: relative;
@@ -36,11 +36,11 @@
 	display: block;
 	width: 61px;
 	height: 54px;
-	background: url(../img/pen.png)no-repeat;
+	background: url(../img/pen_article.png)no-repeat;
 	position: absolute;
-	right: -46px;
+	right: 0px;
 	bottom: 0px;
-	
+	z-index: 10;
 }
 .content_wrap>h3 span:hover img{
 	background: url(../img/pen_hover.png);

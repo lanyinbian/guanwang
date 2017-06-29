@@ -76,7 +76,7 @@ $(function() {
 			var lisnum=lists.length
 			for(var i=0;i<lisnum;i++){
 				var list=lists[i]
-				var itemHTML =itemHtml.replace("$coverImg$",list.coverImg)
+				var itemHTML =itemHtml.replace("img/list_gomore_bg.jpg",list.coverImg)
                     .replace("$title$",list.title)
                     .replace("$creatAt$",list.creatAt)
                     .replace("$describe$",list.describe)
